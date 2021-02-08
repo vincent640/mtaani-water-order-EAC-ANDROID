@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/available_vendors"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Available Vendors" />
+
+    <item
+        android:id="@+id/buyer_orders"
+        android:icon="@drawable/ic_list"
+        android:title="My Orders" />
+
+    <item
+        android:id="@+id/added_to_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Cart" />
+
+    <item
+        android:id="@+id/buyer_logOut"
+        android:icon="@drawable/ic_power"
+        android:title="Log Out" />
+</menu>

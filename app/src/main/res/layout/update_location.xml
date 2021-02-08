@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_TextInputLayoutAddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:textColorHint="#304FFE"
+        app:boxStrokeColor="#304FFE"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_menu_view"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:singleLine="true"
+            android:textColor="#000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_TextInputLayoutPrice"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_TextInputLayoutAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:textColorHint="#304FFE"
+        app:boxStrokeColor="#304FFE"
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dialog_TextInputLayoutPrice"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_home"
+            android:hint="Building Name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#000" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/changeLocation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_TextInputLayoutPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@xml/button_background"
+        android:text="update"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+</RelativeLayout>
